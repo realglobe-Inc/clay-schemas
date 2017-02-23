@@ -1,0 +1,49 @@
+/**
+ * Bud file for README.md
+ */
+
+'use strict'
+
+const { readmeMdBud } = require('ape-tmpl')
+const pkg = require('./package.json')
+const aglob = require('aglob')
+const path = require('path')
+const stringcase = require('stringcase')
+
+module.exports = readmeMdBud({
+  pkg,
+  repo: pkg.repository,
+  sections: 'doc/guides/*.md.hbs',
+  badges: {
+    // TODO OSS
+    // travis: true,
+    travisCom: true,
+    travisComToken: 'aeFzCpBZebyaRijpCFmm',
+    npm: true,
+    standard: true
+  },
+  overview: 'doc/overview.md',
+  links: require('./doc/links'),
+  vars: {
+    get schemas () {
+      return aglob.sync('lib/**/*.json')
+        .map((filename) => ({
+          filename,
+          name: path.relative('lib', filename),
+          schema: require(path.resolve(filename))
+        }))
+    },
+    get examples () {
+      return aglob.sync('example/**/example-*.json')
+        .map((filename) => ({
+          filename,
+          name: path.basename(filename, '.json'),
+          example: path.resolve(filename)
+        }))
+    }
+  }
+})
+
+if (!module.parent) {
+  require('coz').render(__filename)
+}
