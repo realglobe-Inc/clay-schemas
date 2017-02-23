@@ -1,0 +1,54 @@
+{
+  "name": "clay-schemas",
+  "version": "1.0.0",
+  "description": "Schemas for ClayDB",
+  "main": "lib",
+  "scripts": {
+    "test": "node ./ci/test.js",
+    "test-karma": "karma start",
+    "prepare": "node ./ci/build.js && node ./ci/shim.js"
+  },
+  "repository": "realglobe-Inc/clay-schemas",
+  "keywords": [
+    "ClayDB"
+  ],
+  "author": {
+    "name": "Taka Okunishi",
+    "email": "okunishinishi@gmail.com",
+    "url": "http://okunishitaka.com"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/realglobe-Inc/clay-schemas/issues"
+  },
+  "homepage": "https://github.com/realglobe-Inc/clay-schemas#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ababel": "^2.0.1",
+    "ababel-es2015": "^2.0.1",
+    "aglob": "^2.0.1",
+    "amocha": "^2.0.0",
+    "ape-formatting": "^1.0.2",
+    "ape-releasing": "^4.0.4",
+    "ape-tasking": "^4.0.8",
+    "ape-tmpl": "^5.0.15",
+    "ape-updating": "^4.0.5",
+    "babel-polyfill": "^6.13.0",
+    "co": "^4.6.0",
+    "coz": "^6.0.17",
+    "filecopy": "^3.0.0",
+    "injectmock": "^2.0.0",
+    "sg-karma": "^1.0.5",
+    "stringcase": "^3.0.1",
+    "sugos-travis": "^2.0.6",
+    "tv4": "^1.2.7"
+  },
+  "engines": {
+    "node": ">=6",
+    "npm": ">=4"
+  },
+  "publishConfig": {
+    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
+  }
+}

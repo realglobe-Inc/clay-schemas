@@ -64,22 +64,37 @@ $ npm install clay-schemas --save
 
 <!-- Section from "doc/guides/01.Installation.md.hbs" End -->
 
-<!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
+<!-- Section from "doc/guides/02.Schemas.md.hbs" Start -->
 
-<a name="section-doc-guides-02-usage-md"></a>
+<a name="section-doc-guides-02-schemas-md"></a>
 
-Usage
+Schemas
 ---------
 
-```javascript
-'use strict'
++ [resource_schema.json - Schema for resource object](lib/resource_schema.json)
 
-const claySchemas = require('clay-schemas')
 
+<!-- Section from "doc/guides/02.Schemas.md.hbs" End -->
+
+<!-- Section from "doc/guides/03.Examples.md.hbs" Start -->
+
+<a name="section-doc-guides-03-examples-md"></a>
+
+Examples
+---------
+
+##### Example Resource
+
+```json
+{
+  "name": "example-users",
+  "version": "1.0.0",
+  "desc": "Example resource of users"
+}
 ```
 
 
-<!-- Section from "doc/guides/02.Usage.md.hbs" End -->
+<!-- Section from "doc/guides/03.Examples.md.hbs" End -->
 
 
 <!-- Sections Start -->
