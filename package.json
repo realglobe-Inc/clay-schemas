@@ -1,6 +1,6 @@
 {
   "name": "clay-schemas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Schemas for ClayDB",
   "main": "lib",
   "scripts": {
@@ -22,8 +22,7 @@
     "url": "https://github.com/realglobe-Inc/clay-schemas/issues"
   },
   "homepage": "https://github.com/realglobe-Inc/clay-schemas#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "ababel": "^2.0.1",
     "ababel-es2015": "^2.0.1",
