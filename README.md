@@ -71,6 +71,7 @@ $ npm install clay-schemas --save
 Schemas
 ---------
 
++ [entity_schema.json - Schema for entity object](lib/entity_schema.json)
 + [resource_schema.json - Schema for resource object](lib/resource_schema.json)
 
 
@@ -83,6 +84,13 @@ Schemas
 Examples
 ---------
 
+##### Example Entity
+
+```json
+{
+  "id": "9a9cfbd9e15447239c1b5434c7b9ab27"
+}
+```
 ##### Example Resource
 
 ```json

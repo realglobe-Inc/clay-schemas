@@ -1,0 +1,22 @@
+{
+  "id": "http://realglobe.jp/clay-db/schemas/entity#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Schema for entity object",
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "#/definitions/id",
+      "minLength": 1,
+      "description": "Id of entity"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "definitions": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z](?:[_\\.-]?[A-Za-z0-9]+)*$"
+    }
+  }
+}
