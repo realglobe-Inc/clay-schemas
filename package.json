@@ -1,6 +1,6 @@
 {
   "name": "clay-schemas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Schemas for ClayDB",
   "main": "lib",
   "scripts": {
