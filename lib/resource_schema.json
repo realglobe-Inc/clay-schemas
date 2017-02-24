@@ -1,5 +1,5 @@
 {
-  "id": "http://sugos.tech/schemas/module-spec",
+  "id": "http://realglobe.jp/clay-db/schemas/resource#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Schema for resource object",
   "type": "object",
