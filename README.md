@@ -71,8 +71,8 @@ $ npm install clay-schemas --save
 Schemas
 ---------
 
-+ [entity_schema.json - Schema for entity object](lib/entity_schema.json)
-+ [resource_schema.json - Schema for resource object](lib/resource_schema.json)
++ [entity_schema.json](lib/entity_schema.json) - Schema for entity object
++ [resource_schema.json](lib/resource_schema.json) - Schema for resource object
 
 
 <!-- Section from "doc/guides/02.Schemas.md.hbs" End -->
