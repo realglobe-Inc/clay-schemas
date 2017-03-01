@@ -9,27 +9,26 @@
       "minLength": 1,
       "description": "Name of module"
     },
-    "version": {
-      "$ref": "#/definitions/semver",
-      "description": "Version number with semver format"
+    "domain": {
+      "$ref": "#/definitions/domain",
+      "description": "Domain of resource"
     },
-    "desc": {
+    "description": {
       "$ref": "#/definitions/text",
       "description": "Description text"
     }
   },
   "required": [
-    "name",
-    "version"
+    "name"
   ],
   "definitions": {
     "name": {
       "type": "string",
       "pattern": "^[A-Za-z](?:[_\\.-]?[A-Za-z0-9]+)*$"
     },
-    "semver": {
+    "domain": {
       "type": "string",
-      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[a-z]+(?:[_\\.-]*[a-z0-9]+)*)*$"
+      "pattern": "^[A-Za-z](?:[_\\.-]?[A-Za-z0-9]+)*$"
     },
     "text": {
       "type": "string",
