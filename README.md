@@ -96,8 +96,8 @@ Examples
 ```json
 {
   "name": "example-users",
-  "version": "1.0.0",
-  "desc": "Example resource of users"
+  "domain": "example.com",
+  "description": "Example resource of users"
 }
 ```
 
