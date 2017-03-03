@@ -88,7 +88,8 @@ Examples
 
 ```json
 {
-  "id": "9a9cfbd9e15447239c1b5434c7b9ab27"
+  "id": "9a9cfbd9e15447239c1b5434c7b9ab27",
+  "$$at": "2017-03-03T02:35:04.349Z"
 }
 ```
 ##### Example Resource
