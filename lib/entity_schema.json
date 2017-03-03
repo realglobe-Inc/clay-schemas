@@ -8,15 +8,31 @@
       "$ref": "#/definitions/id",
       "minLength": 1,
       "description": "Id of entity"
+    },
+    "$$at": {
+      "$ref": "#/definitions/date",
+      "description": "Date resource updated last time"
+    },
+    "$$seal": {
+      "$ref": "#/definitions/digest",
+      "description": "Digest hash"
     }
   },
   "required": [
-    "id"
+    "id",
+    "$$at"
   ],
   "definitions": {
     "id": {
       "type": "string",
       "pattern": "^[A-Za-z](?:[_\\.-]?[A-Za-z0-9]+)*$"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^[A-Z0-9\\.:-]*$"
+    },
+    "digest": {
+      "type": "string"
     }
   }
 }
