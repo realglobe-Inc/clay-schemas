@@ -5,53 +5,53 @@
   "type": "object",
   "patternProperties": {
     "^[^\\$]": {
-      "$ref": "#/definitions/property",
-      "description": "Policy property"
+      "$ref": "#/definitions/field",
+      "description": "Policy field"
     }
   },
   "definitions": {
-    "property": {
+    "field": {
       "type": "object",
-      "description": "Property for a policy",
+      "description": "Field for a policy",
       "properties": {
         "type": {
-          "description": "Type of property",
+          "description": "Type of the field",
           "type": "string"
         },
         "oneOf": {
-          "description": "Enum values",
+          "description": "Enum values for the field",
           "type": "array",
           "minItems": 1,
           "uniqueItems": true
         },
         "required": {
-          "description": "Value is required",
+          "description": "Value is required for the field",
           "type": "boolean",
           "default": false
         },
         "default": {
-          "description": "Default value of property",
+          "description": "Default value of the field",
           "type": "any"
         },
         "unique": {
-          "description": "Add unique constraint",
+          "description": "Add unique constraint on the field",
           "type": "boolean",
           "default": false
         },
         "minimum": {
-          "description": "Minimum value of property",
+          "description": "Minimum value of the field",
           "type": "number"
         },
         "maximum": {
-          "description": "Maximum value of property",
+          "description": "Maximum value of the field",
           "type": "number"
         },
         "minLength": {
-          "description": "Minimum length of property",
+          "description": "Minimum length of the field",
           "type": "integer"
         },
         "maxLength": {
-          "description": "Maximum length of property",
+          "description": "Maximum length of the field",
           "type": "integer"
         }
       },
