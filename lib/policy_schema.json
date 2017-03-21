@@ -1,0 +1,63 @@
+{
+  "id": "http://realglobe.jp/clay-db/schemas/policy#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Schema for policy object",
+  "type": "object",
+  "patternProperties": {
+    "^[^\\$]": {
+      "$ref": "#/definitions/field",
+      "description": "Policy field"
+    }
+  },
+  "definitions": {
+    "field": {
+      "type": "object",
+      "description": "Field for a policy",
+      "properties": {
+        "type": {
+          "description": "Type of the field",
+          "type": "string"
+        },
+        "oneOf": {
+          "description": "Enum values for the field",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "required": {
+          "description": "Value is required for the field",
+          "type": "boolean",
+          "default": false
+        },
+        "default": {
+          "description": "Default value of the field",
+          "type": "any"
+        },
+        "unique": {
+          "description": "Add unique constraint on the field",
+          "type": "boolean",
+          "default": false
+        },
+        "minimum": {
+          "description": "Minimum value of the field",
+          "type": "number"
+        },
+        "maximum": {
+          "description": "Maximum value of the field",
+          "type": "number"
+        },
+        "minLength": {
+          "description": "Minimum length of the field",
+          "type": "integer"
+        },
+        "maxLength": {
+          "description": "Maximum length of the field",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    }
+  }
+}
