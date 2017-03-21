@@ -1,0 +1,11 @@
+{
+  "username": {
+    "type": "STRING",
+    "minLength": 2,
+    "required": true,
+    "unique": true
+  },
+  "birthday": {
+    "type": "DATE"
+  }
+}

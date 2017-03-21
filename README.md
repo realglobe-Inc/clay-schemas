@@ -72,6 +72,7 @@ Schemas
 ---------
 
 + [entity_schema.json](lib/entity_schema.json) - Schema for entity object
++ [policy_schema.json](lib/policy_schema.json) - Schema for policy object
 + [resource_schema.json](lib/resource_schema.json) - Schema for resource object
 
 
@@ -90,6 +91,21 @@ Examples
 {
   "id": "9a9cfbd9e15447239c1b5434c7b9ab27",
   "$$at": "2017-03-03T02:35:04.349Z"
+}
+```
+##### Example Policy
+
+```json
+{
+  "username": {
+    "type": "STRING",
+    "minLength": 2,
+    "required": true,
+    "unique": true
+  },
+  "birthday": {
+    "type": "DATE"
+  }
 }
 ```
 ##### Example Resource
