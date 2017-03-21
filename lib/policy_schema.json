@@ -12,34 +12,46 @@
   "definitions": {
     "property": {
       "type": "object",
+      "description": "Property for a policy",
       "properties": {
         "type": {
+          "description": "Type of property",
           "type": "string"
         },
         "oneOf": {
+          "description": "Enum values",
           "type": "array",
           "minItems": 1,
           "uniqueItems": true
         },
         "required": {
-          "type": "boolean"
+          "description": "Value is required",
+          "type": "boolean",
+          "default": false
         },
         "default": {
+          "description": "Default value of property",
           "type": "any"
         },
         "unique": {
-          "type": "boolean"
+          "description": "Add unique constraint",
+          "type": "boolean",
+          "default": false
         },
         "minimum": {
-          "type": "integer"
+          "description": "Minimum value of property",
+          "type": "number"
         },
         "maximum": {
-          "type": "integer"
+          "description": "Maximum value of property",
+          "type": "number"
         },
         "minLength": {
+          "description": "Minimum length of property",
           "type": "integer"
         },
         "maxLength": {
+          "description": "Maximum length of property",
           "type": "integer"
         }
       },
