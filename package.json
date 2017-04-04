@@ -1,11 +1,10 @@
 {
   "name": "clay-schemas",
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "Schemas for ClayDB",
   "main": "lib",
   "scripts": {
     "test": "node ./ci/test.js",
-    "test-karma": "karma start",
     "prepare": "node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "realglobe-Inc/clay-schemas",
@@ -46,8 +45,5 @@
   "engines": {
     "node": ">=6",
     "npm": ">=4"
-  },
-  "publishConfig": {
-    "registry": "https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-local"
   }
 }
