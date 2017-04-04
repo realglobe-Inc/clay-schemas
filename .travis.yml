@@ -2,13 +2,9 @@ language: node_js
 node_js:
 - '6'
 before_install:
-# TODO OSS
-# - npm i npm-cli-login -g
-# - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
-# - npm who
-- echo "registry = https://realglobe.artifactoryonline.com/realglobe/api/npm/npm-virtual" > $HOME/.npmrc
-- curl -u${NPM_USER}:${NPM_PASSWORD} "https://realglobe.artifactoryonline.com/realglobe/api/npm/auth" >> $HOME/.npmrc
-- cat $HOME/.npmrc
+ - npm i npm-cli-login -g
+ - npm-cli-login -u "${NPM_USER}" -p "${NPM_PASSWORD}" -e "${NPM_EMAIL}"
+ - npm who
 install:
 - npm install
 script:
@@ -19,3 +15,5 @@ after_success:
 - ./ci/travis/publish.js
 env:
   secure: "MuYb5NJD32mmzVFVvwKItpGjZkV2ue91NVfRJ64IAnbcK6hEU4uR0BkplQT97Tx3zZCtqKBvOVhMdL7/RZ9nK+cpI/Y2lxMtuvb5Z3DYH8CGCnwsFITQJNAn0BPcmr8ZYy2yBBzuWIJufDcdyxEeOfDTi3S+PBm82MSwcfQVjEJQDcNy7uas/n/hcgMsV1YwG3fSXzTVetgHE8B7SRusjNvvL3wZeez+/iJ6QHyb2PitGcm1P35PaEzhxK/97diH/lAJQtfTwcm/aCJwkmG3JCjKHZMGeDwo5Crp01sjkzQTYHcpO1VlXtc8oXJRmRLMzj1L9ZQy+OWfmkbpAqOnqx6tFkoUiu6wB4iIV+HuVcCkFYmo9yy4Qo9l7wUMgIVF+UaA4w/lyqC8PJTYqOk0LWGfB/A2SQJmdrT1BYMQLMI066qya9zvMKnuUSkcLF0pg2sch7i4az4Vzpl9zoKY072Lw9eIKm8OwsqJ/TNGUeEmdLNU7F/GCX1/Ow7ZdW8LYGLkVBU8lVZmOBpR5t6BRoExTRhNtteJYyvZgqQtQSoHjYVR7LqpOYT7Bo3WYlBtOV325kuRk1laY0vSv/S+rnbwIuLtA9G/pOWij4sCaSfHJpM1rJrwYlrRaKVQ944HOZ4UqMOjhGZib2ZJKGeafoyKBzx5nWUxbGXuuDjmU+U="
+env:
+  secure: "mzdb2eAXQg6ccXpeBAzgQ0Lga67Eri9FvlM4lIQAdQ9RSwOTsKCN8pqlpL/YBKnB7ainqcViUM0VbG3nztgohmvh22/VVJYkTK5ug8ZpAMOIibbAH7SDVPWIOmo207TMeJy1fO8tv8BBQItfTGw/9Wx4mM0jtje2mlL2Uob9hntV8vY3jpFMyMgPq5ZMD9C03wYjzfkC8XB1DqeYyiqmL7+2uLsRucZx5jv3ZOSttDLjIYffJGIOAyq9+0Odgnwwkw6weJVD+nTRnUbehlxucJBaLyjcYbPxn4gT8h/pVO1nNgaQJLlqSeSKw6sI8aMBQvtb6z2jfeG+ClPgb1GLBJXMJcFASunN/ofW+xYh8NjjiOE6+yHKfwfcrhVDdmMMfnWzt77TaqRil9qf8n2TX6HX/r8Sz3WNUhADVrQ77RTl2sQasv3MjduPSrq8qVJtkjesHNyH8s/rcTVXmfsh6oYK0eQ6u2w1yYEgDb++yLldmjN0Kho29q86FMnFDn6tvgMh4ujwKGmohZDRDvEFaDDLtpfuODIKM67mkj8/bSa7M7eHw1dg54Xd5A8d7hUQfKQnXAHv1h7OgPp15IwaLsOlhSCeQnoZE73oSF6ClsGhSaGYzbLPb+1lbG7yKkqE+uPxC0mVjt36pzVslK+txQrtgRSaloqF9uaTFbV92MM="
