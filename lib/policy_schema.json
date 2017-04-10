@@ -30,8 +30,7 @@
           "default": false
         },
         "default": {
-          "description": "Default value of the field",
-          "type": "any"
+          "description": "Default value of the field"
         },
         "unique": {
           "description": "Add unique constraint on the field",

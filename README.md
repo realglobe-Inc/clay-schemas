@@ -105,6 +105,10 @@ Examples
   },
   "birthday": {
     "type": "DATE"
+  },
+  "createdAt": {
+    "type": "DATE",
+    "default": "now"
   }
 }
 ```

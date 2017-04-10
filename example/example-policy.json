@@ -7,5 +7,9 @@
   },
   "birthday": {
     "type": "DATE"
+  },
+  "createdAt": {
+    "type": "DATE",
+    "default": "2012/12/12"
   }
 }
