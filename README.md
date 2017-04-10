@@ -108,7 +108,7 @@ Examples
   },
   "createdAt": {
     "type": "DATE",
-    "default": "now"
+    "default": "2012/12/12"
   }
 }
 ```
