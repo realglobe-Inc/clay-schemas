@@ -15,11 +15,11 @@
       "description": "Field for a policy",
       "properties": {
         "type": {
-          "description": "Type of the field",
+          "description": "Type of the field. Possible values are defined as DataTypes in clay-constants package.",
           "type": "string"
         },
         "oneOf": {
-          "description": "Enum values for the field",
+          "description": "Enum values for the field (Only for STRING type)",
           "type": "array",
           "minItems": 1,
           "uniqueItems": true
@@ -38,11 +38,11 @@
           "default": false
         },
         "minimum": {
-          "description": "Minimum value of the field",
+          "description": "Minimum value of the field (Only for NUMBER type)",
           "type": "number"
         },
         "maximum": {
-          "description": "Maximum value of the field",
+          "description": "Maximum value of the field (Only for NUMBER type)",
           "type": "number"
         },
         "minLength": {
@@ -52,6 +52,20 @@
         "maxLength": {
           "description": "Maximum length of the field",
           "type": "integer"
+        },
+        "trim": {
+          "description": "Trim value. (Only for STRING type)",
+          "type": "boolean",
+          "default": false
+        },
+        "pattern": {
+          "description": "Restrict value with pattern. (Only for STRING type)",
+          "type": "string"
+        },
+        "multiple": {
+          "description": "Field can contain multiple value. Type restriction will be applied to each items",
+          "type": "boolean",
+          "default": false
         }
       },
       "required": [
