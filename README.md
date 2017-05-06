@@ -109,6 +109,15 @@ Examples
   "createdAt": {
     "type": "DATE",
     "default": "2012/12/12"
+  },
+  "orgId": {
+    "type": "STRING"
+  },
+  "memberIndex": {
+    "type": "NUMBER",
+    "uniqueFor": [
+      "orgId"
+    ]
   }
 }
 ```
