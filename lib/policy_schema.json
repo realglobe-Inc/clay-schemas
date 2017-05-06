@@ -37,6 +37,13 @@
           "type": "boolean",
           "default": false
         },
+        "uniqueFor": {
+          "description": "Names of attributes to make unique for",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "minimum": {
           "description": "Minimum value of the field (Only for NUMBER type)",
           "type": "number"
