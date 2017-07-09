@@ -118,6 +118,12 @@ Examples
     "uniqueFor": [
       "orgId"
     ]
+  },
+  "pointer01": {
+    "type": [
+      "REF",
+      "ENTITY"
+    ]
   }
 }
 ```
