@@ -1,5 +1,4 @@
 {
-  "id": "http://realglobe.jp/clay-db/schemas/policy#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Schema for policy object",
   "type": "object",
@@ -16,7 +15,18 @@
       "properties": {
         "type": {
           "description": "Type of the field. Possible values are defined as DataTypes in clay-constants package.",
-          "type": "string"
+          "oneOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            }
+          ]
         },
         "oneOf": {
           "description": "Enum values for the field (Only for STRING type)",

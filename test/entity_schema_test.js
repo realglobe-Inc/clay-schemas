@@ -25,6 +25,7 @@ describe('entity-schema', function () {
       require('../example/example-entity.json'),
       EntitySchema
     )
+    console.log(result)
     assert.ok(result.valid)
   }))
 })

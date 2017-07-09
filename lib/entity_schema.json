@@ -1,5 +1,4 @@
 {
-  "id": "http://realglobe.jp/clay-db/schemas/entity#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "title": "Schema for entity object",
   "type": "object",
@@ -25,7 +24,7 @@
   "definitions": {
     "id": {
       "type": "string",
-      "pattern": "^[A-Za-z](?:[_\\.-]?[A-Za-z0-9]+)*$"
+      "pattern": "^[A-Za-z0-9\\-_]*$"
     },
     "date": {
       "type": "string",
